@@ -1,0 +1,1 @@
+c:\users\davidpc\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe.config
