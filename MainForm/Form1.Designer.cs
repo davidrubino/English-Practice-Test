@@ -34,6 +34,9 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showMyAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRightAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Button_Next = new System.Windows.Forms.Button();
@@ -44,9 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Button_Back = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.showAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showMyAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showRightAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -57,10 +58,11 @@
             this.fileToolStripMenuItem,
             this.signOutToolStripMenuItem,
             this.showAnswersToolStripMenuItem,
+            this.checkResultsToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(442, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(517, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,19 +79,19 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // signOutToolStripMenuItem
@@ -97,6 +99,29 @@
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.signOutToolStripMenuItem.Text = "Sign in";
+            // 
+            // showAnswersToolStripMenuItem
+            // 
+            this.showAnswersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showMyAnswersToolStripMenuItem,
+            this.showRightAnswersToolStripMenuItem});
+            this.showAnswersToolStripMenuItem.Name = "showAnswersToolStripMenuItem";
+            this.showAnswersToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.showAnswersToolStripMenuItem.Text = "Show Answers";
+            // 
+            // showMyAnswersToolStripMenuItem
+            // 
+            this.showMyAnswersToolStripMenuItem.Name = "showMyAnswersToolStripMenuItem";
+            this.showMyAnswersToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.showMyAnswersToolStripMenuItem.Text = "Show My Answers";
+            this.showMyAnswersToolStripMenuItem.Click += new System.EventHandler(this.showMyAnswersToolStripMenuItem_Click);
+            // 
+            // showRightAnswersToolStripMenuItem
+            // 
+            this.showRightAnswersToolStripMenuItem.Name = "showRightAnswersToolStripMenuItem";
+            this.showRightAnswersToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.showRightAnswersToolStripMenuItem.Text = "Show Right Answers";
+            this.showRightAnswersToolStripMenuItem.Click += new System.EventHandler(this.showRightAnswersToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -113,7 +138,7 @@
             "Medium",
             "Hard",
             "Bilingual"});
-            this.comboBox1.Location = new System.Drawing.Point(309, 3);
+            this.comboBox1.Location = new System.Drawing.Point(384, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -198,34 +223,18 @@
             this.trackBar1.Size = new System.Drawing.Size(104, 45);
             this.trackBar1.TabIndex = 9;
             // 
-            // showAnswersToolStripMenuItem
+            // checkResultsToolStripMenuItem
             // 
-            this.showAnswersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showMyAnswersToolStripMenuItem,
-            this.showRightAnswersToolStripMenuItem});
-            this.showAnswersToolStripMenuItem.Name = "showAnswersToolStripMenuItem";
-            this.showAnswersToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.showAnswersToolStripMenuItem.Text = "Show Answers";
-            // 
-            // showMyAnswersToolStripMenuItem
-            // 
-            this.showMyAnswersToolStripMenuItem.Name = "showMyAnswersToolStripMenuItem";
-            this.showMyAnswersToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.showMyAnswersToolStripMenuItem.Text = "Show My Answers";
-            this.showMyAnswersToolStripMenuItem.Click += new System.EventHandler(this.showMyAnswersToolStripMenuItem_Click);
-            // 
-            // showRightAnswersToolStripMenuItem
-            // 
-            this.showRightAnswersToolStripMenuItem.Name = "showRightAnswersToolStripMenuItem";
-            this.showRightAnswersToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.showRightAnswersToolStripMenuItem.Text = "Show Right Answers";
-            this.showRightAnswersToolStripMenuItem.Click += new System.EventHandler(this.showRightAnswersToolStripMenuItem_Click);
+            this.checkResultsToolStripMenuItem.Name = "checkResultsToolStripMenuItem";
+            this.checkResultsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.checkResultsToolStripMenuItem.Text = "Check Results";
+            this.checkResultsToolStripMenuItem.Click += new System.EventHandler(this.checkResultsToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 353);
+            this.ClientSize = new System.Drawing.Size(517, 353);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.Button_Back);
             this.Controls.Add(this.label1);
@@ -269,6 +278,7 @@
         private System.Windows.Forms.ToolStripMenuItem showAnswersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showMyAnswersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showRightAnswersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkResultsToolStripMenuItem;
     }
 }
 
