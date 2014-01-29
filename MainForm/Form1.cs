@@ -13,14 +13,14 @@ namespace MainForm
     public partial class Form1 : Form
     {
 
-        private int index;
+        private int index, timeLeft;
         private List<Question> questionsList;
-        private List<string> userAnswers;
-        private List<string> rightAnswers;
+        private List<string> userAnswers, rightAnswers;
 
         public Form1()
         {
             this.index = 0;
+            this.timeLeft = 0;
             this.questionsList = new List<Question>();
             this.userAnswers = new List<string>();
             this.rightAnswers = new List<string>();
@@ -28,6 +28,7 @@ namespace MainForm
             questionsList = this.InitializeQuestions();
             rightAnswers = this.GetRightAnswers(this.questionsList);
             this.SetParameters(questionsList.ElementAt(0));
+            this.StartTimer();
         }
 
         private void SetIndex(int i)
@@ -38,6 +39,8 @@ namespace MainForm
         private void NextQuestion(int i)
         {
             this.SetParameters(this.questionsList.ElementAt(i));
+            this.StopTimer();
+            this.StartTimer();
         }
         
         private List<string> GetRightAnswers(List<Question> questionsList)
@@ -161,16 +164,76 @@ namespace MainForm
             Question q18 = new Question("What is the Supreme Law of the Land?", q18_a1, q18_a2, q18_a3);
 
             //Question 19
-            Answer q19_a1 = new Answer("Winter Wonderland", false);
-            Answer q19_a2 = new Answer("Let It Snow", false);
-            Answer q19_a3 = new Answer("White Christmas", true);
-            Question q19 = new Question("Irving Berlin, author of the song God Bless America, also wrote the favorite Christmas song:", q19_a1, q19_a2, q19_a3);
+            Answer q19_a1 = new Answer("A famous American opera singer", false);
+            Answer q19_a2 = new Answer("The author of God Bless America and White Christmas", true);
+            Answer q19_a3 = new Answer("The co-writer of the Broadway show The Sound of Music", false);
+            Question q19 = new Question("Who was Irving Berlin?", q19_a1, q19_a2, q19_a3);
 
             //Question 20
             Answer q20_a1 = new Answer("Labor Day", false);
             Answer q20_a2 = new Answer("Halloween", true);
             Answer q20_a3 = new Answer("Memorial Day", false);
             Question q20 = new Question("Which of the following is NOT a federal holiday in the US:", q20_a1, q20_a2, q20_a3);
+
+            //Question 21
+            Answer q21_a1 = new Answer("George A. Custer", true);
+            Answer q21_a2 = new Answer("Ulysses S. Grant", false);
+            Answer q21_a3 = new Answer("Robert E. Lee", false);
+            Question q21 = new Question("What famous officer was killed during the battle of Little Big Horn?", q21_a1, q21_a2, q21_a3);
+
+            //Question 22
+            Answer q22_a1 = new Answer("The Oval Office", true);
+            Answer q22_a2 = new Answer("The Circle Office", false);
+            Answer q22_a3 = new Answer("The Square Office", false);
+            Question q22 = new Question("What is the name of the president’s office?", q22_a1, q22_a2, q22_a3);
+
+            //Question 23
+            Answer q23_a1 = new Answer("Mel Gibson", false);
+            Answer q23_a2 = new Answer("Al Pacino", false);
+            Answer q23_a3 = new Answer("Arnold Schwarzenegger", true);
+            Question q23 = new Question("What famous American actor was NOT born in the US?", q23_a1, q23_a2, q23_a3);
+
+            //Question 24
+            Answer q24_a1 = new Answer("Klondike", false);
+            Answer q24_a2 = new Answer("Utah", false);
+            Answer q24_a3 = new Answer("California", true);
+            Question q24 = new Question("What was the main state involved in the Gold Rush?", q24_a1, q24_a2, q24_a3);
+
+            //Question 25
+            Answer q25_a1 = new Answer("New Hampshire", false);
+            Answer q25_a2 = new Answer("New England", true);
+            Answer q25_a3 = new Answer("New York", false);
+            Question q25 = new Question("Which one of the following is NOT a US state?", q25_a1, q25_a2, q25_a3);
+
+            //Question 26
+            Answer q26_a1 = new Answer("The Lone Star State", true);
+            Answer q26_a2 = new Answer("The Alamo State", false);
+            Answer q26_a3 = new Answer("The Cow-Boy State", false);
+            Question q26 = new Question("What is the nickname of Texas?", q26_a1, q26_a2, q26_a3);
+
+            //Question 27
+            Answer q27_a1 = new Answer("Spanish", true);
+            Answer q27_a2 = new Answer("French", false);
+            Answer q27_a3 = new Answer("Dutch", false);
+            Question q27 = new Question("What is the second most spoken language in the US?", q27_a1, q27_a2, q27_a3);
+
+            //Question 28
+            Answer q28_a1 = new Answer("Minnesota", true);
+            Answer q28_a2 = new Answer("Florida", false);
+            Answer q28_a3 = new Answer("Montana", false);
+            Question q28 = new Question("What state is famous for its many lakes?", q28_a1, q28_a2, q28_a3);
+
+            //Question 29
+            Answer q29_a1 = new Answer("Kenny Rogers", false);
+            Answer q29_a2 = new Answer("Tim McGraw", false);
+            Answer q29_a3 = new Answer("Johnny Cash", true);
+            Question q29 = new Question("What famous country singer was performing in prisons?", q29_a1, q29_a2, q29_a3);
+
+            //Question 30
+            Answer q30_a1 = new Answer("Dallas", true);
+            Answer q30_a2 = new Answer("Sacramento", false);
+            Answer q30_a3 = new Answer("Salt Lake City", false);
+            Question q30 = new Question("State capitals – Find the intruder:", q30_a1, q30_a2, q30_a3);
 
             //Add questions to the list
             this.questionsList.Add(q1);
@@ -193,6 +256,16 @@ namespace MainForm
             this.questionsList.Add(q18);
             this.questionsList.Add(q19);
             this.questionsList.Add(q20);
+            this.questionsList.Add(q21);
+            this.questionsList.Add(q22);
+            this.questionsList.Add(q23);
+            this.questionsList.Add(q24);
+            this.questionsList.Add(q25);
+            this.questionsList.Add(q26);
+            this.questionsList.Add(q27);
+            this.questionsList.Add(q28);
+            this.questionsList.Add(q29);
+            this.questionsList.Add(q30);
             return questionsList;
         }
 
@@ -242,6 +315,45 @@ namespace MainForm
             }
             return "Correct answers: " + score + " out of " + totalAnswers;
         }
+
+        private void StartTimer()
+        {
+            this.timeLeft = 10;
+            this.RemainingTimeLabel.Text = "10 seconds";
+            timer1.Start();
+        }
+
+        private void StopTimer()
+        {
+            timer1.Stop();
+        }
+
+        private void SubmitAnswers()
+        {
+            RadioButton rb = null;
+            if (radioButton1.Checked == true)
+            {
+                rb = radioButton1;
+            }
+            else if (radioButton2.Checked == true)
+            {
+                rb = radioButton2;
+            }
+            else if (radioButton3.Checked == true)
+            {
+                rb = radioButton3;
+            }
+            this.userAnswers.Add(rb.Text);
+            this.SetIndex(this.index + 1);
+            if (this.index < this.questionsList.Count) {
+                this.NextQuestion(this.index);
+            }
+            else
+            {
+                Button_Next.Enabled = false;
+                this.StopTimer();
+            }
+        }
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -260,25 +372,7 @@ namespace MainForm
 
         private void Button_Next_Click(object sender, EventArgs e)
         {
-            RadioButton rb = null;
-            if (radioButton1.Checked == true)
-            {
-                rb = radioButton1;
-            }
-            else if (radioButton2.Checked == true)
-            {
-                rb = radioButton2;
-            }
-            else if (radioButton3.Checked == true)
-            {
-                rb = radioButton3;
-            }
-            this.userAnswers.Add(rb.Text);
-            this.SetIndex(this.index + 1);
-            if (this.index < this.questionsList.Count)
-                this.NextQuestion(this.index);
-            else
-                Button_Next.Enabled = false;
+            this.SubmitAnswers();
         }
 
         private void Button_Validate_Click(object sender, EventArgs e)
@@ -299,6 +393,19 @@ namespace MainForm
         private void checkResultsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this.CheckResults(), "My Results", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (this.timeLeft > 0)
+            {
+                this.timeLeft = this.timeLeft - 1;
+                RemainingTimeLabel.Text = this.timeLeft + " seconds";
+            }
+            else
+            {
+                this.SubmitAnswers();
+            }
         }
     }
 }

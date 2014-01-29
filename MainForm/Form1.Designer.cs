@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,7 @@
             this.showAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showMyAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showRightAnswersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Button_Next = new System.Windows.Forms.Button();
@@ -47,7 +49,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Button_Back = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.checkResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.RemainingTimeLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -122,6 +126,13 @@
             this.showRightAnswersToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.showRightAnswersToolStripMenuItem.Text = "Show Right Answers";
             this.showRightAnswersToolStripMenuItem.Click += new System.EventHandler(this.showRightAnswersToolStripMenuItem_Click);
+            // 
+            // checkResultsToolStripMenuItem
+            // 
+            this.checkResultsToolStripMenuItem.Name = "checkResultsToolStripMenuItem";
+            this.checkResultsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.checkResultsToolStripMenuItem.Text = "Check Results";
+            this.checkResultsToolStripMenuItem.Click += new System.EventHandler(this.checkResultsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -218,23 +229,41 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(143, 37);
+            this.trackBar1.Location = new System.Drawing.Point(132, 37);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(104, 45);
             this.trackBar1.TabIndex = 9;
             // 
-            // checkResultsToolStripMenuItem
+            // timer1
             // 
-            this.checkResultsToolStripMenuItem.Name = "checkResultsToolStripMenuItem";
-            this.checkResultsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.checkResultsToolStripMenuItem.Text = "Check Results";
-            this.checkResultsToolStripMenuItem.Click += new System.EventHandler(this.checkResultsToolStripMenuItem_Click);
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(323, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Time Remaining:";
+            // 
+            // RemainingTimeLabel
+            // 
+            this.RemainingTimeLabel.AutoSize = true;
+            this.RemainingTimeLabel.Location = new System.Drawing.Point(415, 37);
+            this.RemainingTimeLabel.Name = "RemainingTimeLabel";
+            this.RemainingTimeLabel.Size = new System.Drawing.Size(77, 13);
+            this.RemainingTimeLabel.TabIndex = 11;
+            this.RemainingTimeLabel.Text = "time_remaining";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 353);
+            this.Controls.Add(this.RemainingTimeLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.Button_Back);
             this.Controls.Add(this.label1);
@@ -279,6 +308,9 @@
         private System.Windows.Forms.ToolStripMenuItem showMyAnswersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showRightAnswersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkResultsToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label RemainingTimeLabel;
     }
 }
 
