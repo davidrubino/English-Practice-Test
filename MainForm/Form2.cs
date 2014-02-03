@@ -13,6 +13,9 @@ namespace MainForm
     public partial class Form2 : Form
     {
         
+        private Form1 QuizzForm;
+        private Form3 GrammarTest;
+        
         public Form2()
         {
             InitializeComponent();
@@ -21,6 +24,19 @@ namespace MainForm
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.QuizzForm = new Form1();
+            this.QuizzForm.Show();
+            this.QuizzForm.StartTimer();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.GrammarTest = new Form3();
+            this.GrammarTest.Show();
         }
     }
 }

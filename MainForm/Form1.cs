@@ -28,7 +28,6 @@ namespace MainForm
             questionsList = this.InitializeQuestions();
             rightAnswers = this.GetRightAnswers(this.questionsList);
             this.SetParameters(questionsList.ElementAt(0));
-            this.StartTimer();
         }
 
         private void SetIndex(int i)
@@ -316,7 +315,7 @@ namespace MainForm
             return "Correct answers: " + score + " out of " + totalAnswers;
         }
 
-        private void StartTimer()
+        public void StartTimer()
         {
             this.timeLeft = 10;
             this.RemainingTimeLabel.Text = "10 seconds";
