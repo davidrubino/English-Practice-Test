@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Code7248.word_reader;
 
 namespace MainForm
 {
     public partial class Form3 : Form
     {
+        
         public Form3()
         {
             InitializeComponent();
+            button1.Text = "Got it!";
+            button1.Font = new Font("Times New Roman", 10);
+            button1.Size = new Size(100, 25);
+            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/TextInstruction.html");
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -24,26 +28,17 @@ namespace MainForm
 
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string curDir = Directory.GetCurrentDirectory();
-                this.webBrowser1.Url = new Uri(String.Format("C:/Users/DavidPC/Documents/Projet ENGLISH/html/englishProjectEx2.html", curDir));
+            button1.Text = "Submit My Answers";
+            button1.Size = new Size(150, 25);
+            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
+        }
 
-                /*using (StreamReader sr = new StreamReader("C:/Users/DavidPC/Documents/Projet ENGLISH/html/englishProjectEx2.html"))
-                {
-                    String line = await sr.ReadToEndAsync();
-                    label1.Text = line;
-
-                    
-                }*/
-
-            }
-            catch (Exception ex)
-            {
-                label1.Text = "Could not read the file";
-            }
+        private void LoadImage(string path)
+        {
+            string curDir = Directory.GetCurrentDirectory();
+            this.webBrowser1.Url = new Uri(String.Format(path, curDir));
         }
     }
 }
