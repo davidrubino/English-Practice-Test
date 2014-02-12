@@ -30,9 +30,10 @@ namespace MainForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             button1.Text = "Submit My Answers";
             button1.Size = new Size(150, 25);
-            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
+            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
         }
 
         private void LoadImage(string path)
