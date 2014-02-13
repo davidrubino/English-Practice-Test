@@ -63,6 +63,7 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserInputAnswersForm.resx">
       <DependentUpon>UserInputAnswersForm.cs</DependentUpon>
@@ -108,6 +110,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\submit_answers.bmp" />
+    <None Include="Resources\show_completed_text.bmp" />
+    <None Include="Resources\show_answer_table.bmp" />
+    <None Include="Resources\view_my_answers.bmp" />
     <Content Include="stylesheet.css" />
     <Content Include="TextInstruction.html" />
     <Content Include="WebArticle.html" />

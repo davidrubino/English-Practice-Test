@@ -14,12 +14,17 @@ namespace MainForm
     public partial class Form3 : Form
     {
         
+        private UserInputAnswersForm answersForm;
+        private ListChecker listChecker;
+
         public Form3()
         {
             InitializeComponent();
-            button1.Text = "Got it!";
-            button1.Font = new Font("Times New Roman", 10);
-            button1.Size = new Size(100, 25);
+            this.WindowState = FormWindowState.Maximized;
+            this.TransparencyKey = Color.Empty;
+            this.answersForm = new UserInputAnswersForm();
+            this.listChecker = new ListChecker(answersForm);
+            button_gotIt.Font = new Font("Times New Roman", 10);
             LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/TextInstruction.html");
         }
 
@@ -28,18 +33,37 @@ namespace MainForm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_gotIt_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            button1.Text = "Submit My Answers";
-            button1.Size = new Size(150, 25);
             LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
+            toolStrip1.Visible = true;
+            panel_bottom.Visible = false;
         }
 
         private void LoadImage(string path)
         {
             string curDir = Directory.GetCurrentDirectory();
             this.webBrowser1.Url = new Uri(String.Format(path, curDir));
+        }
+
+        private void toolStripButton_submitAnswers_Click(object sender, EventArgs e)
+        {
+            this.listChecker.FillUserAnswersList();
+        }
+
+        private void toolStripButton_displayCompletedText_Click(object sender, EventArgs e)
+        {
+            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
+        }
+
+        private void toolStripButton_showAnswerTable_Click(object sender, EventArgs e)
+        {
+            this.answersForm.Show();
+        }
+
+        private void toolStripButton_viewMyAnswers_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.listChecker.UserAnswersListToString());
         }
     }
 }

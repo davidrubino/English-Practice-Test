@@ -13,7 +13,6 @@ namespace MainForm
     public partial class UserInputAnswersForm : Form
     {
 
-        private List<string> UserAnswers = new List<string>();
         private DataTable dt;
 
         public UserInputAnswersForm()
@@ -40,40 +39,15 @@ namespace MainForm
             dataGridView1.DataSource = dt;
             dataGridView1.AllowUserToAddRows = false;
         }
-
-        private void FillUserAnswersList()
-        {
-            for(int i=0; i<57; i++)
-            {
-                string o = dt.Rows[i]["Your answer"].ToString();
-                this.UserAnswers.Add(o);
-            }
-        }
-
-        public string UserAnswersListToString()
-        {
-            string str = "";
-            for(int i=0; i<this.UserAnswers.Count; i++)
-            {
-                str += this.UserAnswers.ElementAt(i);
-            }
-            return str;
-        }
-
-        public List<string> GetUserAnswers()
-        {
-            return this.UserAnswers;
-        }
         
         private void UserInputAnswersForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public DataTable GetDataTable()
         {
-            FillUserAnswersList();
-            MessageBox.Show(UserAnswersListToString());
+            return this.dt;
         }
 
     }
