@@ -40,15 +40,10 @@ namespace MainForm
             panel_bottom.Visible = false;
         }
 
-        private void LoadImage(string path)
-        {
-            string curDir = Directory.GetCurrentDirectory();
-            this.webBrowser1.Url = new Uri(String.Format(path, curDir));
-        }
-
         private void toolStripButton_submitAnswers_Click(object sender, EventArgs e)
         {
             this.listChecker.FillUserAnswersList();
+            MessageBox.Show(this.listChecker.ShowScore());
         }
 
         private void toolStripButton_displayCompletedText_Click(object sender, EventArgs e)
@@ -65,5 +60,12 @@ namespace MainForm
         {
             MessageBox.Show(this.listChecker.UserAnswersListToString());
         }
+
+        private void LoadImage(string path)
+        {
+            string curDir = Directory.GetCurrentDirectory();
+            this.webBrowser1.Url = new Uri(String.Format(path, curDir));
+        }
+
     }
 }

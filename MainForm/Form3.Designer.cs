@@ -32,14 +32,14 @@
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton_showAnswerTable = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton_viewMyAnswers = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton_submitAnswers = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton_displayCompletedText = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel_bottom.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -79,10 +79,10 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton_showAnswerTable,
             this.toolStripLabel3,
-            this.toolStripButton_viewMyAnswers,
-            this.toolStripLabel4,
             this.toolStripButton_submitAnswers,
             this.toolStripLabel1,
+            this.toolStripButton_viewMyAnswers,
+            this.toolStripLabel4,
             this.toolStripButton_displayCompletedText,
             this.toolStripLabel2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -91,30 +91,6 @@
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Visible = false;
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(112, 22);
-            this.toolStripLabel1.Text = "Submit My Answers";
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(123, 22);
-            this.toolStripLabel2.Text = "Show Completed Text";
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(110, 22);
-            this.toolStripLabel3.Text = "Show Answer Table";
-            // 
-            // toolStripLabel4
-            // 
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(99, 22);
-            this.toolStripLabel4.Text = "View My Answers";
             // 
             // toolStripButton_showAnswerTable
             // 
@@ -126,6 +102,12 @@
             this.toolStripButton_showAnswerTable.Text = "toolStripButton1";
             this.toolStripButton_showAnswerTable.Click += new System.EventHandler(this.toolStripButton_showAnswerTable_Click);
             // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(110, 22);
+            this.toolStripLabel3.Text = "Show Answer Table";
+            // 
             // toolStripButton_viewMyAnswers
             // 
             this.toolStripButton_viewMyAnswers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -135,6 +117,12 @@
             this.toolStripButton_viewMyAnswers.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_viewMyAnswers.Text = "toolStripButton1";
             this.toolStripButton_viewMyAnswers.Click += new System.EventHandler(this.toolStripButton_viewMyAnswers_Click);
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(99, 22);
+            this.toolStripLabel4.Text = "View My Answers";
             // 
             // toolStripButton_submitAnswers
             // 
@@ -146,6 +134,12 @@
             this.toolStripButton_submitAnswers.Text = "Submit My Answers";
             this.toolStripButton_submitAnswers.Click += new System.EventHandler(this.toolStripButton_submitAnswers_Click);
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(112, 22);
+            this.toolStripLabel1.Text = "Submit My Answers";
+            // 
             // toolStripButton_displayCompletedText
             // 
             this.toolStripButton_displayCompletedText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -155,6 +149,12 @@
             this.toolStripButton_displayCompletedText.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_displayCompletedText.Text = "Show Completed Text";
             this.toolStripButton_displayCompletedText.Click += new System.EventHandler(this.toolStripButton_displayCompletedText_Click);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(123, 22);
+            this.toolStripLabel2.Text = "Show Completed Text";
             // 
             // Form3
             // 

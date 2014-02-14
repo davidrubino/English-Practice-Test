@@ -17,6 +17,7 @@ namespace MainForm
             this.correctAnswersList = new List<string>();
             this.userAnswersList = new List<string>();
             this.userInputAnswerForm = userInputAnswerForm;
+            FillCorrectAnswersList();
         }
 
         public void FillCorrectAnswersList()
@@ -87,16 +88,9 @@ namespace MainForm
             {
                 for (int j = 0; j < this.userAnswersList.Count; j++)
                 {
-                    if (!this.userAnswersList.ElementAt(j).Equals(null))
+                    if (this.userAnswersList.ElementAt(j) == this.correctAnswersList.ElementAt(i))
                     {
-                        if (this.userAnswersList.ElementAt(j) == this.correctAnswersList.ElementAt(i))
-                        {
-                            score++;
-                        }
-                    }
-                    else
-                    {
-                        score = -1;
+                        score++;
                     }
                 }
             }
@@ -124,7 +118,7 @@ namespace MainForm
             {
                 for (int i = 0; i < this.userAnswersList.Count; i++)
                 {
-                    str += this.userAnswersList.ElementAt(i);
+                    str += this.userAnswersList.ElementAt(i)+"\n";
                 }
             }
             else
