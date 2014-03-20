@@ -121,13 +121,19 @@
   <data name="show_answer_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\show_answer_table.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="view_my_answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view_my_answers.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="show_completed_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\show_completed_text.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="submit_answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\submit_answers.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="view_my_answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view_my_answers.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="main_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main_background.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blown_Away" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02_-_Blown_Away.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -15,6 +15,7 @@ namespace MainForm
         
         private Form1 QuizzForm;
         private Form3 GrammarTest;
+        private ListeningForm ListeningTest;
         
         public Form2()
         {
@@ -26,17 +27,33 @@ namespace MainForm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Quizz_Click(object sender, EventArgs e)
         {
-            this.QuizzForm = new Form1();
+            this.QuizzForm = new Form1("Culture Quizz");
             this.QuizzForm.Show();
             this.QuizzForm.StartTimer();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_Test_Click(object sender, EventArgs e)
         {
             this.GrammarTest = new Form3();
             this.GrammarTest.Show();
+        }
+
+        private void button_About_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by David RUBINO and Thibaut LESAGE", "About", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
+
+        private void button_Listening_Click(object sender, EventArgs e)
+        {
+            this.ListeningTest = new ListeningForm();
+            this.ListeningTest.Show();
+        }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

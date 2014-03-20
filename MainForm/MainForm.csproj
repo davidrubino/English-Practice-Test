@@ -64,10 +64,18 @@
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="ListChecker.cs" />
+    <Compile Include="ListeningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeningForm.Designer.cs">
+      <DependentUpon>ListeningForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
+    <Compile Include="QuestionsGenerator.cs" />
     <Compile Include="QuestionsListEmptyException.cs" />
+    <Compile Include="QuizzModel.cs" />
     <Compile Include="UserInputAnswersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeningForm.resx">
+      <DependentUpon>ListeningForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +125,8 @@
     <None Include="Resources\show_completed_text.bmp" />
     <None Include="Resources\show_answer_table.bmp" />
     <None Include="Resources\view_my_answers.bmp" />
+    <Content Include="Resources\02_-_Blown_Away.wav" />
+    <Content Include="Resources\main_background.bmp" />
     <Content Include="stylesheet.css" />
     <Content Include="TextInstruction.html" />
     <Content Include="WebArticle.html" />

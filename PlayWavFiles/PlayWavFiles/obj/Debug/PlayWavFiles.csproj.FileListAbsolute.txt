@@ -6,3 +6,5 @@ C:\Users\DavidPC\Downloads\PlayWavFiles\PlayWavFiles\PlayWavFiles\obj\Debug\Play
 C:\Users\DavidPC\Downloads\PlayWavFiles\PlayWavFiles\PlayWavFiles\obj\Debug\PlayWavFiles.csproj.GenerateResource.Cache
 C:\Users\DavidPC\Downloads\PlayWavFiles\PlayWavFiles\PlayWavFiles\obj\Debug\PlayWavFiles.exe
 C:\Users\DavidPC\Downloads\PlayWavFiles\PlayWavFiles\PlayWavFiles\obj\Debug\PlayWavFiles.pdb
+C:\Users\DavidPC\Documents\Projet ENGLISH\PlayWavFiles\PlayWavFiles\obj\Debug\PlayWavFiles.exe
+C:\Users\DavidPC\Documents\Projet ENGLISH\PlayWavFiles\PlayWavFiles\obj\Debug\PlayWavFiles.pdb
