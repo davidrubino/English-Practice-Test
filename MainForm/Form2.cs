@@ -29,7 +29,7 @@ namespace MainForm
 
         private void button_Quizz_Click(object sender, EventArgs e)
         {
-            this.QuizzForm = new Form1("Culture Quizz");
+            this.QuizzForm = new Form1();
             this.QuizzForm.Show();
             this.QuizzForm.StartTimer();
         }

@@ -238,58 +238,58 @@ namespace MainForm
         public List<Question> ListeningTestQuestions()
         {
             //Question 1
-            Answer q1_a1 = new Answer("Alabama", false);
-            Answer q1_a2 = new Answer("Oregon", false);
-            Answer q1_a3 = new Answer("Oklahoma", true);
-            Question q1 = new Question("Which one of these states is mentioned in the song?", q1_a1, q1_a2, q1_a3);
+            Answer q1_a1 = new Answer("Stormy", true);
+            Answer q1_a2 = new Answer("Cloudy", false);
+            Answer q1_a3 = new Answer("Sunny", false);
+            Question q1 = new Question("In the song, what is the weather like?", q1_a1, q1_a2, q1_a3);
 
             //Question 2
-            Answer q2_a1 = new Answer("To dissipate or remove as if with a current of air", true);
-            Answer q2_a2 = new Answer("To melt when overloaded", false);
-            Answer q2_a3 = new Answer("To pass away without effect", false);
-            Question q2 = new Question("What is the correct definition of “to blow away”?", q2_a1, q2_a2, q2_a3);
+            Answer q2_a1 = new Answer("He is “an angel in the ground”", false);
+            Answer q2_a2 = new Answer("He is “a mean old mister”", true);
+            Answer q2_a3 = new Answer("He listens “to the screaming of the wind”", false);
+            Question q2 = new Question("What can be inferred about \nthe girl’s father?", q2_a1, q2_a2, q2_a3);
 
             //Question 3
-            Answer q3_a1 = new Answer("Stormy", true);
-            Answer q3_a2 = new Answer("Cloudy", false);
-            Answer q3_a3 = new Answer("Sunny", false);
-            Question q3 = new Question("In the song, what is the weather like?", q3_a1, q3_a2, q3_a3);
+            Answer q3_a1 = new Answer("Alabama", false);
+            Answer q3_a2 = new Answer("Oregon", false);
+            Answer q3_a3 = new Answer("Oklahoma", true);
+            Question q3 = new Question("Which one of these states is mentioned \nin the song?", q3_a1, q3_a2, q3_a3);
 
             //Question 4
-            Answer q4_a1 = new Answer("She drinks whiskey.", false);
-            Answer q4_a2 = new Answer("She locks herself in the cellar.", true);
-            Answer q4_a3 = new Answer("She does not take shelter during the storm.", false);
-            Question q4 = new Question("Which one of these assertions is true about the girl?", q4_a1, q4_a2, q4_a3);
+            Answer q4_a1 = new Answer("Wash the tins of that house", false);
+            Answer q4_a2 = new Answer("Wash the sins out of that house", true);
+            Answer q4_a3 = new Answer("Watch and sing out of that house", false);
+            Question q4 = new Question("Fill out the blank: “There’s not enough \nrain in Oklahoma to…", q4_a1, q4_a2, q4_a3);
 
             //Question 5
-            Answer q5_a1 = new Answer("To disperse", true);
-            Answer q5_a2 = new Answer("To break", false);
-            Answer q5_a3 = new Answer("To damage", false);
-            Question q5 = new Question("In this context, give a synonym of the word “shatter”:", q5_a1, q5_a2, q5_a3);
+            Answer q5_a1 = new Answer("To dissipate or remove as if with a current of air", true);
+            Answer q5_a2 = new Answer("To melt when overloaded", false);
+            Answer q5_a3 = new Answer("To pass away without effect", false);
+            Question q5= new Question("What is the correct definition of \n“to blow away”?", q5_a1, q5_a2, q5_a3);
 
             //Question 6
-            Answer q6_a1 = new Answer("He is “an angel in the ground”", false);
-            Answer q6_a2 = new Answer("He is “a mean old mister”", true);
-            Answer q6_a3 = new Answer("He listens “to the screaming of the wind”", false);
-            Question q6 = new Question("What can be inferred about the girl’s father?", q6_a1, q6_a2, q6_a3);
+            Answer q6_a1 = new Answer("She drinks whiskey.", false);
+            Answer q6_a2 = new Answer("She locks herself in the cellar.", true);
+            Answer q6_a3 = new Answer("She does not take shelter during the storm.", false);
+            Question q6 = new Question("Which one of these assertions is true \nabout the girl?", q6_a1, q6_a2, q6_a3);
 
             //Question 7
-            Answer q7_a1 = new Answer("Wash the tins of that house", false);
-            Answer q7_a2 = new Answer("Wash the sins out of that house", true);
-            Answer q7_a3 = new Answer("Watch and sing out of that house", false);
-            Question q7 = new Question("Fill out the blank: “There’s not enough rain in Oklahoma to…", q7_a1, q7_a2, q7_a3);
+            Answer q7_a1 = new Answer("To disperse", true);
+            Answer q7_a2 = new Answer("To break", false);
+            Answer q7_a3 = new Answer("To damage", false);
+            Question q7 = new Question("In this context, give a synonym of \nthe word “shatter”:", q7_a1, q7_a2, q7_a3);
 
             //Question 8
-            Answer q8_a1 = new Answer("To pass away", false);
-            Answer q8_a2 = new Answer("To pass along", true);
+            Answer q8_a1 = new Answer("To pass away", true);
+            Answer q8_a2 = new Answer("To pass along", false);
             Answer q8_a3 = new Answer("To pass through", false);
             Question q8 = new Question("Give a synonym of the verb “to die”:", q8_a1, q8_a2, q8_a3);
 
             //Question 9
             Answer q9_a1 = new Answer("She died during the storm.", false);
-            Answer q9_a2 = new Answer("She did not love her daughter.", true);
-            Answer q9_a3 = new Answer("She passed away OR left the house.", false);
-            Question q9 = new Question("According to you, what happened to the girl’s mother?", q9_a1, q9_a2, q9_a3);
+            Answer q9_a2 = new Answer("She did not love her daughter.", false);
+            Answer q9_a3 = new Answer("She passed away OR left the house.", true);
+            Question q9 = new Question("According to you, what happened to \nthe girl’s mother?", q9_a1, q9_a2, q9_a3);
 
             //Question 10
             Answer q10_a1 = new Answer("Taylor Swift", false);

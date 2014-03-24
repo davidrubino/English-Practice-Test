@@ -18,7 +18,7 @@ namespace MainForm
         private List<string> userAnswers, rightAnswers;
         private QuestionsGenerator questionsGenerator;
 
-        public Form1(string title)
+        public Form1()
         {
             this.index = 0;
             this.timeLeft = 0;
