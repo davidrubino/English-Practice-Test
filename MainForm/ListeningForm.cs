@@ -126,6 +126,7 @@ namespace MainForm
             else
             {
                 button_OK.Enabled = false;
+                this.sndplayr.Stop();
                 MessageBox.Show(this.CheckResults(), "My Results", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
