@@ -63,7 +63,6 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListChecker.cs" />
     <Compile Include="ListeningForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,13 +74,6 @@
     <Compile Include="Question.cs" />
     <Compile Include="QuestionsGenerator.cs" />
     <Compile Include="QuestionsListEmptyException.cs" />
-    <Compile Include="QuizzModel.cs" />
-    <Compile Include="UserInputAnswersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserInputAnswersForm.Designer.cs">
-      <DependentUpon>UserInputAnswersForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,9 +96,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserInputAnswersForm.resx">
-      <DependentUpon>UserInputAnswersForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,12 +112,9 @@
   <ItemGroup>
     <None Include="Resources\submit_answers.bmp" />
     <None Include="Resources\show_completed_text.bmp" />
-    <None Include="Resources\show_answer_table.bmp" />
-    <None Include="Resources\view_my_answers.bmp" />
     <Content Include="Resources\02_-_Blown_Away.wav" />
     <Content Include="Resources\main_background.bmp" />
     <Content Include="stylesheet.css" />
-    <Content Include="TextInstruction.html" />
     <Content Include="WebArticle.html" />
     <Content Include="WebArticle_UserVersion.html" />
   </ItemGroup>

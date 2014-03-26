@@ -14,16 +14,19 @@ namespace MainForm
     public partial class Form3 : Form
     {
         
-        private UserInputAnswersForm answersForm;
-        private ListChecker listChecker;
+        private DataTable dt;
+        private int score;
+        private List<string> correctAnswersList;
 
         public Form3()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.TransparencyKey = Color.Empty;
-            this.answersForm = new UserInputAnswersForm();
-            this.listChecker = new ListChecker(answersForm);
+            this.dt = new DataTable();
+            this.InitializeTable();
+            this.score = 0;
+            this.correctAnswersList = new List<string>();
             LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
         }
 
@@ -34,23 +37,12 @@ namespace MainForm
 
         private void toolStripButton_submitAnswers_Click(object sender, EventArgs e)
         {
-            this.listChecker.FillUserAnswersList();
-            MessageBox.Show(this.listChecker.ShowScore());
+            MessageBox.Show("results: "+this.CheckResults());
         }
 
         private void toolStripButton_displayCompletedText_Click(object sender, EventArgs e)
         {
             LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
-        }
-
-        private void toolStripButton_showAnswerTable_Click(object sender, EventArgs e)
-        {
-            this.answersForm.Show();
-        }
-
-        private void toolStripButton_viewMyAnswers_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(this.listChecker.UserAnswersListToString());
         }
 
         private void LoadImage(string path)
@@ -59,5 +51,71 @@ namespace MainForm
             this.webBrowser1.Url = new Uri(String.Format(path, curDir));
         }
 
+        private void InitializeTable()
+        {
+            this.dt.Clear();
+            this.dt.Columns.Add("#");
+            this.dt.Columns.Add("Answer");
+            this.dt.Columns[0].ReadOnly = true;
+
+            for (int i = 1; i <= 30; i++)
+            {
+                DataRow _answerNo = dt.NewRow();
+                _answerNo["#"] = i;
+                dt.Rows.Add(_answerNo);
+            }
+
+            dataGridView_User.DataSource = dt;
+            dataGridView_User.AllowUserToAddRows = false;
+            dataGridView_User.AllowUserToDeleteRows = false;
+            dataGridView_User.AllowUserToResizeColumns = false;
+        }
+
+        public void FillCorrectAnswersList()
+        {
+            this.correctAnswersList.Add("have");
+            this.correctAnswersList.Add("has");
+            this.correctAnswersList.Add("about");
+            this.correctAnswersList.Add("accessible");
+            this.correctAnswersList.Add("at");
+            this.correctAnswersList.Add("to");
+            this.correctAnswersList.Add("to");
+            this.correctAnswersList.Add("operating systems");
+            this.correctAnswersList.Add("in");
+            this.correctAnswersList.Add("more");
+            this.correctAnswersList.Add("scale");
+            this.correctAnswersList.Add("any");
+            this.correctAnswersList.Add("from");
+            this.correctAnswersList.Add("to");
+            this.correctAnswersList.Add("through");
+            this.correctAnswersList.Add("called");
+            this.correctAnswersList.Add("aside");
+            this.correctAnswersList.Add("sensors");
+            this.correctAnswersList.Add("as");
+            this.correctAnswersList.Add("privacy");
+            this.correctAnswersList.Add("into");
+            this.correctAnswersList.Add("stores");
+            this.correctAnswersList.Add("at");
+            this.correctAnswersList.Add("able");
+            this.correctAnswersList.Add("down");
+            this.correctAnswersList.Add("into");
+            this.correctAnswersList.Add("much");
+            this.correctAnswersList.Add("what");
+            this.correctAnswersList.Add("much");
+            this.correctAnswersList.Add("valuable");
+        }
+
+        private int CheckResults()
+        {
+            for(int i=0; i<30; i++)
+            {
+                string yATmax = dt.Rows[i]["Answer"].ToString();
+                if (yATmax == this.correctAnswersList.ElementAt(i))
+                {
+                    score++;
+                }
+            }
+            return score;
+        }
     }
 }

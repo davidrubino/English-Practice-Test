@@ -9,5 +9,4 @@ C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\o
 C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.csprojResolveAssemblyReference.cache
 C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.pdb
 C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form3.resources
-C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.UserInputAnswersForm.resources
 C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.ListeningForm.resources

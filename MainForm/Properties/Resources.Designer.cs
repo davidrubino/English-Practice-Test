@@ -82,16 +82,6 @@ namespace MainForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap show_answer_table {
-            get {
-                object obj = ResourceManager.GetObject("show_answer_table", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap show_completed_text {
             get {
                 object obj = ResourceManager.GetObject("show_completed_text", resourceCulture);
@@ -105,16 +95,6 @@ namespace MainForm.Properties {
         internal static System.Drawing.Bitmap submit_answers {
             get {
                 object obj = ResourceManager.GetObject("submit_answers", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap view_my_answers {
-            get {
-                object obj = ResourceManager.GetObject("view_my_answers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
