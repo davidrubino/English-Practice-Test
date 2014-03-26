@@ -42,3 +42,11 @@ div {
     font-size: 20px;
     text-align: center;
 }
+
+.instructions {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    -webkit-border-radius: 50px;
+}

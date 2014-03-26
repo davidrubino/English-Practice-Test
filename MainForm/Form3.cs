@@ -24,20 +24,12 @@ namespace MainForm
             this.TransparencyKey = Color.Empty;
             this.answersForm = new UserInputAnswersForm();
             this.listChecker = new ListChecker(answersForm);
-            button_gotIt.Font = new Font("Times New Roman", 10);
-            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/TextInstruction.html");
+            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button_gotIt_Click(object sender, EventArgs e)
-        {
-            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
-            toolStrip1.Visible = true;
-            panel_bottom.Visible = false;
         }
 
         private void toolStripButton_submitAnswers_Click(object sender, EventArgs e)
