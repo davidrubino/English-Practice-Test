@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_submitAnswers = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton_displayCompletedText = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView_User = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.toolStripButton_submitAnswers = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_displayCompletedText = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_User)).BeginInit();
@@ -56,11 +56,31 @@
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripButton_submitAnswers
+            // 
+            this.toolStripButton_submitAnswers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_submitAnswers.Image = global::MainForm.Properties.Resources.submit_answers;
+            this.toolStripButton_submitAnswers.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_submitAnswers.Name = "toolStripButton_submitAnswers";
+            this.toolStripButton_submitAnswers.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_submitAnswers.Text = "Submit My Answers";
+            this.toolStripButton_submitAnswers.Click += new System.EventHandler(this.toolStripButton_submitAnswers_Click);
+            // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(112, 22);
             this.toolStripLabel1.Text = "Submit My Answers";
+            // 
+            // toolStripButton_displayCompletedText
+            // 
+            this.toolStripButton_displayCompletedText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_displayCompletedText.Image = global::MainForm.Properties.Resources.show_completed_text;
+            this.toolStripButton_displayCompletedText.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_displayCompletedText.Name = "toolStripButton_displayCompletedText";
+            this.toolStripButton_displayCompletedText.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_displayCompletedText.Text = "Show Completed Text";
+            this.toolStripButton_displayCompletedText.Click += new System.EventHandler(this.toolStripButton_displayCompletedText_Click);
             // 
             // toolStripLabel2
             // 
@@ -80,6 +100,11 @@
             // 
             // dataGridView_User
             // 
+            this.dataGridView_User.AllowUserToAddRows = false;
+            this.dataGridView_User.AllowUserToDeleteRows = false;
+            this.dataGridView_User.AllowUserToResizeColumns = false;
+            this.dataGridView_User.AllowUserToResizeRows = false;
+            this.dataGridView_User.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_User.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_User.Location = new System.Drawing.Point(0, 0);
@@ -105,26 +130,6 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(517, 300);
             this.webBrowser1.TabIndex = 3;
-            // 
-            // toolStripButton_submitAnswers
-            // 
-            this.toolStripButton_submitAnswers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_submitAnswers.Image = global::MainForm.Properties.Resources.submit_answers;
-            this.toolStripButton_submitAnswers.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_submitAnswers.Name = "toolStripButton_submitAnswers";
-            this.toolStripButton_submitAnswers.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_submitAnswers.Text = "Submit My Answers";
-            this.toolStripButton_submitAnswers.Click += new System.EventHandler(this.toolStripButton_submitAnswers_Click);
-            // 
-            // toolStripButton_displayCompletedText
-            // 
-            this.toolStripButton_displayCompletedText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_displayCompletedText.Image = global::MainForm.Properties.Resources.show_completed_text;
-            this.toolStripButton_displayCompletedText.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_displayCompletedText.Name = "toolStripButton_displayCompletedText";
-            this.toolStripButton_displayCompletedText.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_displayCompletedText.Text = "Show Completed Text";
-            this.toolStripButton_displayCompletedText.Click += new System.EventHandler(this.toolStripButton_displayCompletedText_Click);
             // 
             // Form3
             // 

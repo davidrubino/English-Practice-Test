@@ -27,7 +27,13 @@ namespace MainForm
             this.InitializeTable();
             this.score = 0;
             this.correctAnswersList = new List<string>();
-            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
+            this.FillCorrectAnswersList();
+
+            //string urlToNavigate = Application.StartupPath + @"\WebArticle_UserVersion.html";
+            //webBrowser1.Navigate(urlToNavigate);
+
+            Uri uri = new Uri("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
+            webBrowser1.Navigate(uri);
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -42,7 +48,8 @@ namespace MainForm
 
         private void toolStripButton_displayCompletedText_Click(object sender, EventArgs e)
         {
-            LoadImage("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
+            Uri uri = new Uri("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
+            webBrowser1.Navigate(uri);
         }
 
         private void LoadImage(string path)
@@ -66,9 +73,7 @@ namespace MainForm
             }
 
             dataGridView_User.DataSource = dt;
-            dataGridView_User.AllowUserToAddRows = false;
-            dataGridView_User.AllowUserToDeleteRows = false;
-            dataGridView_User.AllowUserToResizeColumns = false;
+            dataGridView_User.AutoResizeColumns();
         }
 
         public void FillCorrectAnswersList()
