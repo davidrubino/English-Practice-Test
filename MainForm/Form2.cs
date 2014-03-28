@@ -20,6 +20,8 @@ namespace MainForm
         public Form2()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -31,6 +31,7 @@ namespace MainForm
             InitializeComponent();
             rightAnswers = this.GetRightAnswers(this.questionsList);
             this.SetParameters(questionsList.ElementAt(0));
+            this.label_score.Visible = false;
         }
 
         private void ListeningForm_Load(object sender, EventArgs e)
@@ -92,6 +93,7 @@ namespace MainForm
 
         private string CheckResults()
         {
+            string message = "";
             int score = 0;
             int totalAnswers = this.rightAnswers.Count;
             for (int i = 0; i < this.userAnswers.Count; i++)
@@ -99,7 +101,23 @@ namespace MainForm
                 if (this.rightAnswers.Contains(this.userAnswers.ElementAt(i)))
                     score++;
             }
-            return "Correct answers: " + score + " out of " + totalAnswers;
+            if (score == 10)
+            {
+                message = "Congratulations! You got the 10 correct answers!";
+            }
+            else if (score < 10 && score >= 6)
+            {
+                message = "Well done! You have a score of " + score + ".";
+            }
+            else if (score < 6 && score >= 1)
+            {
+                message = "Sorry, but you only got " + score + " out of 10.";
+            }
+            else
+            {
+                message = "Shame on you! You even haven't got one correct answer!!";
+            }
+            return message;
         }
         
         private void SubmitAnswers()
@@ -127,7 +145,8 @@ namespace MainForm
             {
                 button_OK.Enabled = false;
                 this.sndplayr.Stop();
-                MessageBox.Show(this.CheckResults(), "My Results", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                this.label_score.Text = this.CheckResults();
+                this.label_score.Visible = true;
             }
         }
     }

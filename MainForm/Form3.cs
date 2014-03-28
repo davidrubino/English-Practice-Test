@@ -28,12 +28,11 @@ namespace MainForm
             this.score = 0;
             this.correctAnswersList = new List<string>();
             this.FillCorrectAnswersList();
+            this.toolStripLabel_score.Visible = false;
 
-            //string urlToNavigate = Application.StartupPath + @"\WebArticle_UserVersion.html";
-            //webBrowser1.Navigate(urlToNavigate);
-
-            Uri uri = new Uri("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle_UserVersion.html");
-            webBrowser1.Navigate(uri);
+            String appdir = Path.GetDirectoryName(Application.ExecutablePath);
+            String myfile = Path.Combine(appdir, "WebArticle_UserVersion.html");
+            webBrowser1.Url = new Uri("file:///" + myfile);
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -43,13 +42,17 @@ namespace MainForm
 
         private void toolStripButton_submitAnswers_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("results: "+this.CheckResults());
+            this.toolStripButton_submitAnswers.Enabled = false;
+            this.toolStripButton_displayCompletedText.Enabled = true;
+            this.toolStripLabel_score.Visible = true;
+            this.toolStripLabel_score.Text = "Correct answers: " + this.CheckResults()+"/30";
         }
 
         private void toolStripButton_displayCompletedText_Click(object sender, EventArgs e)
         {
-            Uri uri = new Uri("C:/Users/DavidPC/documents/visual studio 2013/Projects/EnglishProject/MainForm/WebArticle.html");
-            webBrowser1.Navigate(uri);
+            String appdir = Path.GetDirectoryName(Application.ExecutablePath);
+            String myfile = Path.Combine(appdir, "WebArticle.html");
+            webBrowser1.Url = new Uri("file:///" + myfile);
         }
 
         private void LoadImage(string path)

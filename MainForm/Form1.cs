@@ -17,6 +17,7 @@ namespace MainForm
         private List<Question> questionsList;
         private List<string> userAnswers, rightAnswers;
         private QuestionsGenerator questionsGenerator;
+        private WebBrowserForm webBrowserForm;
 
         public Form1()
         {
@@ -29,6 +30,8 @@ namespace MainForm
             InitializeComponent();
             rightAnswers = this.GetRightAnswers(this.questionsList);
             this.SetParameters(questionsList.ElementAt(0));
+            this.button_Display_Right_Answers.Enabled = false;
+            this.label_score.Visible = false;
         }
 
         private void SetIndex(int i)
@@ -90,6 +93,7 @@ namespace MainForm
 
         private string CheckResults()
         {
+            string message = "";
             int score = 0;
             int totalAnswers = this.rightAnswers.Count;
             for (int i = 0; i < this.userAnswers.Count; i++)
@@ -97,7 +101,27 @@ namespace MainForm
                 if (this.rightAnswers.Contains(this.userAnswers.ElementAt(i)))
                     score++;
             }
-            return "Correct answers: " + score + " out of " + totalAnswers;
+            if(score==30)
+            {
+                message = "Congratulations! You got the 30 correct answers!";
+            }
+            else if(score<30 && score>=20)
+            {
+                message = "Well done! You have a score of " + score + ".";
+            }
+            else if(score<20 && score>=10)
+            {
+                message = "Sorry, but you only got " + score + " out of 30.";
+            }
+            else if(score<10 && score>0)
+            {
+                message = "This is really bad. Your score is " + score + ".";
+            }
+            else
+            {
+                message = "Shame on you! You even haven't got one correct answer!!";
+            }
+            return message;
         }
 
         public void StartTimer()
@@ -136,8 +160,10 @@ namespace MainForm
             else
             {
                 Button_OK.Enabled = false;
+                button_Display_Right_Answers.Enabled = true;
                 this.StopTimer();
-                MessageBox.Show(this.CheckResults(), "My Results", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                this.label_score.Text = this.CheckResults();
+                this.label_score.Visible = true;
             }
         }
         
@@ -162,6 +188,12 @@ namespace MainForm
             {
                 this.SubmitAnswers();
             }
+        }
+
+        private void button_Display_Right_Answers_Click(object sender, EventArgs e)
+        {
+            this.webBrowserForm = new WebBrowserForm();
+            this.webBrowserForm.Show();
         }
     }
 }

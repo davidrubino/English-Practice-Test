@@ -37,6 +37,9 @@
             this.dataGridView_User = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel_score = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_User)).BeginInit();
@@ -48,8 +51,11 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton_submitAnswers,
             this.toolStripLabel1,
+            this.toolStripSeparator1,
             this.toolStripButton_displayCompletedText,
-            this.toolStripLabel2});
+            this.toolStripLabel2,
+            this.toolStripSeparator2,
+            this.toolStripLabel_score});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(735, 25);
@@ -75,6 +81,7 @@
             // toolStripButton_displayCompletedText
             // 
             this.toolStripButton_displayCompletedText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_displayCompletedText.Enabled = false;
             this.toolStripButton_displayCompletedText.Image = global::MainForm.Properties.Resources.show_completed_text;
             this.toolStripButton_displayCompletedText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_displayCompletedText.Name = "toolStripButton_displayCompletedText";
@@ -131,6 +138,24 @@
             this.webBrowser1.Size = new System.Drawing.Size(517, 300);
             this.webBrowser1.TabIndex = 3;
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel_score
+            // 
+            this.toolStripLabel_score.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_score.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel_score.Name = "toolStripLabel_score";
+            this.toolStripLabel_score.Size = new System.Drawing.Size(120, 22);
+            this.toolStripLabel_score.Text = "toolStripLabel_score";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +189,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView_User;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel_score;
 
     }
 }

@@ -40,6 +40,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button_Display_Right_Answers = new System.Windows.Forms.Button();
+            this.label_score = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,7 +50,7 @@
             // Button_OK
             // 
             this.Button_OK.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_OK.Location = new System.Drawing.Point(220, 3);
+            this.Button_OK.Location = new System.Drawing.Point(63, 8);
             this.Button_OK.Name = "Button_OK";
             this.Button_OK.Size = new System.Drawing.Size(75, 32);
             this.Button_OK.TabIndex = 2;
@@ -141,6 +143,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label_score);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.radioButton2);
@@ -153,12 +156,35 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button_Display_Right_Answers);
             this.panel3.Controls.Add(this.Button_OK);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 307);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(517, 46);
             this.panel3.TabIndex = 12;
+            // 
+            // button_Display_Right_Answers
+            // 
+            this.button_Display_Right_Answers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Display_Right_Answers.Location = new System.Drawing.Point(272, 8);
+            this.button_Display_Right_Answers.Name = "button_Display_Right_Answers";
+            this.button_Display_Right_Answers.Size = new System.Drawing.Size(176, 32);
+            this.button_Display_Right_Answers.TabIndex = 15;
+            this.button_Display_Right_Answers.Text = "Display Right Answers";
+            this.button_Display_Right_Answers.UseVisualStyleBackColor = true;
+            this.button_Display_Right_Answers.Click += new System.EventHandler(this.button_Display_Right_Answers_Click);
+            // 
+            // label_score
+            // 
+            this.label_score.AutoSize = true;
+            this.label_score.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_score.ForeColor = System.Drawing.Color.Red;
+            this.label_score.Location = new System.Drawing.Point(31, 221);
+            this.label_score.Name = "label_score";
+            this.label_score.Size = new System.Drawing.Size(97, 19);
+            this.label_score.TabIndex = 16;
+            this.label_score.Text = "label_score";
             // 
             // Form1
             // 
@@ -194,6 +220,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button_Display_Right_Answers;
+        private System.Windows.Forms.Label label_score;
     }
 }
 

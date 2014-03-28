@@ -107,7 +107,7 @@ namespace MainForm
             Answer q15_a1 = new Answer("Monument Valley", true);
             Answer q15_a2 = new Answer("The Grand Canyon", false);
             Answer q15_a3 = new Answer("Death Valley", false);
-            Question q15 = new Question("What was John Ford’s favorite place to shot movies?", q15_a1, q15_a2, q15_a3);
+            Question q15 = new Question("What was John Ford’s favorite place to shoot movies?", q15_a1, q15_a2, q15_a3);
 
             //Question 16
             Answer q16_a1 = new Answer("Tories and Democrats", false);
@@ -253,7 +253,7 @@ namespace MainForm
             Answer q3_a1 = new Answer("Alabama", false);
             Answer q3_a2 = new Answer("Oregon", false);
             Answer q3_a3 = new Answer("Oklahoma", true);
-            Question q3 = new Question("Which one of these states is mentioned \nin the song?", q3_a1, q3_a2, q3_a3);
+            Question q3 = new Question("Which one of these states is \nmentioned in the song?", q3_a1, q3_a2, q3_a3);
 
             //Question 4
             Answer q4_a1 = new Answer("Wash the tins of that house", false);

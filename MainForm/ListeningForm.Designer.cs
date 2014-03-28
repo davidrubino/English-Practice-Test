@@ -39,8 +39,11 @@
             this.radioButton_Answer1 = new System.Windows.Forms.RadioButton();
             this.label_Question = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label_score = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Play
@@ -78,16 +81,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.button_OK);
             this.panel1.Controls.Add(this.radioButton_Answer3);
             this.panel1.Controls.Add(this.radioButton_Answer2);
             this.panel1.Controls.Add(this.radioButton_Answer1);
             this.panel1.Controls.Add(this.label_Question);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(378, 0);
+            this.panel1.Location = new System.Drawing.Point(398, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 365);
+            this.panel1.Size = new System.Drawing.Size(370, 365);
             this.panel1.TabIndex = 5;
             // 
             // button_OK
@@ -148,21 +151,42 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button_Play);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 365);
+            this.panel2.Size = new System.Drawing.Size(404, 365);
             this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.Controls.Add(this.label_score);
+            this.panel3.Location = new System.Drawing.Point(0, 315);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(753, 50);
+            this.panel3.TabIndex = 4;
+            // 
+            // label_score
+            // 
+            this.label_score.AutoSize = true;
+            this.label_score.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_score.ForeColor = System.Drawing.Color.Red;
+            this.label_score.Location = new System.Drawing.Point(52, 13);
+            this.label_score.Name = "label_score";
+            this.label_score.Size = new System.Drawing.Size(97, 19);
+            this.label_score.TabIndex = 7;
+            this.label_score.Text = "label_score";
             // 
             // ListeningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 365);
+            this.ClientSize = new System.Drawing.Size(768, 365);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ListeningForm";
@@ -173,6 +197,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -189,5 +215,7 @@
         private System.Windows.Forms.Label label_Question;
         private System.Windows.Forms.Button button_OK;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label_score;
     }
 }
