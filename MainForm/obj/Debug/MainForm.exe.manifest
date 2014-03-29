@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MainForm.exe" size="44055040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MainForm.exe" size="44054528">
       <assemblyIdentity name="MainForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>M1IuoN3/hjZSqPkb9CXWoDxDfxBIWIEqGYvq4UUrTPM=</dsig:DigestValue>
+        <dsig:DigestValue>mQcUVqqiJg010nEotm2TaxE/7Z70ohbG0wl3zRqnik0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="CultureQuizz.html" size="7656">
+  <file name="CultureQuiz.html" size="7654">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ilsxCiEpAkcbnOT+Be85y1T5m7zSGHRjAUa7AXx897w=</dsig:DigestValue>
+      <dsig:DigestValue>yIafpwHGi3SRDhwooOEB2TUolZDwMmNrA37gxFCdhSo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MainForm.exe.config" size="187">

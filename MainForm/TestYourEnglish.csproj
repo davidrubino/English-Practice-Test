@@ -150,7 +150,7 @@
   <ItemGroup>
     <None Include="Resources\submit_answers.bmp" />
     <None Include="Resources\show_completed_text.bmp" />
-    <Content Include="CultureQuizz.html">
+    <Content Include="CultureQuiz.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\02_-_Blown_Away.wav" />

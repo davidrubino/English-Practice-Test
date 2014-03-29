@@ -13,7 +13,7 @@ namespace MainForm
     public partial class Form2 : Form
     {
         
-        private Form1 QuizzForm;
+        private Form1 QuizForm;
         private Form3 GrammarTest;
         private ListeningForm ListeningTest;
         
@@ -21,7 +21,8 @@ namespace MainForm
         {
             InitializeComponent();
             this.MaximizeBox = false;
-            this.StartPosition = FormStartPosition.CenterScreen; 
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -31,9 +32,9 @@ namespace MainForm
 
         private void button_Quizz_Click(object sender, EventArgs e)
         {
-            this.QuizzForm = new Form1();
-            this.QuizzForm.Show();
-            this.QuizzForm.StartTimer();
+            this.QuizForm = new Form1();
+            this.QuizForm.Show();
+            this.QuizForm.StartTimer();
         }
 
         private void button_Test_Click(object sender, EventArgs e)

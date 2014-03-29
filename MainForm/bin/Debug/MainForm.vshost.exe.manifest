@@ -42,17 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MainForm.exe" size="44050944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MainForm.exe" size="44055040">
       <assemblyIdentity name="MainForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lZueZnU6z8LCu3t+gy1YwuBeH4aJwQ5RZw3HL1rNo6c=</dsig:DigestValue>
+        <dsig:DigestValue>M1IuoN3/hjZSqPkb9CXWoDxDfxBIWIEqGYvq4UUrTPM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="CultureQuizz.html" size="7656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ilsxCiEpAkcbnOT+Be85y1T5m7zSGHRjAUa7AXx897w=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="MainForm.exe.config" size="187">
     <hash>
       <dsig:Transforms>
@@ -80,22 +89,22 @@
       <dsig:DigestValue>8k/sZGndBTBpkqNlSmaswwP8dvQMZt6fmcOk6Ikyizg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WebArticle.html" size="6903">
+  <file name="WebArticle.html" size="6980">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vIhliLRuZ122SU+KBNpdBJXkp0JEUV3hhlXvyJZzQXw=</dsig:DigestValue>
+      <dsig:DigestValue>VfUoiUcg96NweqrZJJ88hIvjQVc9/CTvQEJcwMyARfM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WebArticle_UserVersion.html" size="7471">
+  <file name="WebArticle_UserVersion.html" size="7405">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AQUzGfYZonrj/lG6OK5H9UlciTNU/JI3fyyR8RvaTEo=</dsig:DigestValue>
+      <dsig:DigestValue>s2U3PX1GEZpS3OGtQ4+HlklYyqS5e/WuMyFrKkPpYH0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -32,6 +32,9 @@ namespace MainForm
             this.SetParameters(questionsList.ElementAt(0));
             this.button_Display_Right_Answers.Enabled = false;
             this.label_score.Visible = false;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
         private void SetIndex(int i)

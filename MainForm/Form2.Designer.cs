@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.button_Quizz = new System.Windows.Forms.Button();
             this.button_Test = new System.Windows.Forms.Button();
             this.button_Listening = new System.Windows.Forms.Button();
@@ -40,19 +39,6 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(308, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Test Your English!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // button_Quizz
             // 
             this.button_Quizz.BackColor = System.Drawing.Color.Transparent;
@@ -61,7 +47,7 @@
             this.button_Quizz.Name = "button_Quizz";
             this.button_Quizz.Size = new System.Drawing.Size(151, 28);
             this.button_Quizz.TabIndex = 4;
-            this.button_Quizz.Text = "Culture Quizz";
+            this.button_Quizz.Text = "Culture Quiz";
             this.button_Quizz.UseVisualStyleBackColor = false;
             this.button_Quizz.Click += new System.EventHandler(this.button_Quizz_Click);
             // 
@@ -115,7 +101,7 @@
             this.groupBox1.Controls.Add(this.button_Quizz);
             this.groupBox1.Controls.Add(this.button_Test);
             this.groupBox1.Controls.Add(this.button_Listening);
-            this.groupBox1.Location = new System.Drawing.Point(611, 22);
+            this.groupBox1.Location = new System.Drawing.Point(611, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(238, 209);
             this.groupBox1.TabIndex = 9;
@@ -126,7 +112,7 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.button_About);
             this.groupBox2.Controls.Add(this.button_Exit);
-            this.groupBox2.Location = new System.Drawing.Point(611, 299);
+            this.groupBox2.Location = new System.Drawing.Point(611, 389);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(238, 136);
             this.groupBox2.TabIndex = 10;
@@ -140,20 +126,17 @@
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Test Your English!";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_Quizz;
         private System.Windows.Forms.Button button_Test;
         private System.Windows.Forms.Button button_Listening;

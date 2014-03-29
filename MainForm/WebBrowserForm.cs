@@ -18,7 +18,7 @@ namespace MainForm
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             String appdir = Path.GetDirectoryName(Application.ExecutablePath);
-            String myfile = Path.Combine(appdir, "CultureQuizz.html");
+            String myfile = Path.Combine(appdir, "CultureQuiz.html");
             webBrowser1.Url = new Uri("file:///" + myfile);
         }
     }

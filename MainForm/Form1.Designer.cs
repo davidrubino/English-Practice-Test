@@ -39,9 +39,9 @@
             this.RemainingTimeLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label_score = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_Display_Right_Answers = new System.Windows.Forms.Button();
-            this.label_score = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -154,6 +154,17 @@
             this.panel2.Size = new System.Drawing.Size(517, 318);
             this.panel2.TabIndex = 14;
             // 
+            // label_score
+            // 
+            this.label_score.AutoSize = true;
+            this.label_score.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_score.ForeColor = System.Drawing.Color.Red;
+            this.label_score.Location = new System.Drawing.Point(31, 221);
+            this.label_score.Name = "label_score";
+            this.label_score.Size = new System.Drawing.Size(97, 19);
+            this.label_score.TabIndex = 16;
+            this.label_score.Text = "label_score";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.button_Display_Right_Answers);
@@ -175,17 +186,6 @@
             this.button_Display_Right_Answers.UseVisualStyleBackColor = true;
             this.button_Display_Right_Answers.Click += new System.EventHandler(this.button_Display_Right_Answers_Click);
             // 
-            // label_score
-            // 
-            this.label_score.AutoSize = true;
-            this.label_score.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_score.ForeColor = System.Drawing.Color.Red;
-            this.label_score.Location = new System.Drawing.Point(31, 221);
-            this.label_score.Name = "label_score";
-            this.label_score.Size = new System.Drawing.Size(97, 19);
-            this.label_score.TabIndex = 16;
-            this.label_score.Text = "label_score";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,7 +196,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "Culture Quizz";
+            this.Text = "Culture Quiz";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

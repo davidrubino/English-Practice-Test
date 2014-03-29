@@ -31,15 +31,15 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton_submitAnswers = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton_displayCompletedText = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel_score = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView_User = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel_score = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_User)).BeginInit();
@@ -78,6 +78,11 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(112, 22);
             this.toolStripLabel1.Text = "Submit My Answers";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // toolStripButton_displayCompletedText
             // 
             this.toolStripButton_displayCompletedText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -94,6 +99,19 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(123, 22);
             this.toolStripLabel2.Text = "Show Completed Text";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel_score
+            // 
+            this.toolStripLabel_score.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_score.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel_score.Name = "toolStripLabel_score";
+            this.toolStripLabel_score.Size = new System.Drawing.Size(120, 22);
+            this.toolStripLabel_score.Text = "toolStripLabel_score";
             // 
             // panel1
             // 
@@ -138,24 +156,6 @@
             this.webBrowser1.Size = new System.Drawing.Size(517, 300);
             this.webBrowser1.TabIndex = 3;
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripLabel_score
-            // 
-            this.toolStripLabel_score.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel_score.ForeColor = System.Drawing.Color.Red;
-            this.toolStripLabel_score.Name = "toolStripLabel_score";
-            this.toolStripLabel_score.Size = new System.Drawing.Size(120, 22);
-            this.toolStripLabel_score.Text = "toolStripLabel_score";
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,7 +165,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form3";
-            this.Text = "Vocabulary and Grammar Test";
+            this.Text = "Grammar Test";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form3_Load);
             this.toolStrip1.ResumeLayout(false);
