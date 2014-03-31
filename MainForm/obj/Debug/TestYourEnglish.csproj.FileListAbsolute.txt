@@ -18,23 +18,23 @@ C:\Users\DavidPC\Documents\Projet ENGLISH\MainForm\obj\Debug\TestYourEnglish.csp
 C:\Users\DavidPC\Documents\Projet ENGLISH\MainForm\obj\Debug\MainForm.exe.manifest
 C:\Users\DavidPC\Documents\Projet ENGLISH\MainForm\obj\Debug\MainForm.application
 C:\Users\DavidPC\Documents\Projet ENGLISH\MainForm\bin\Debug\CultureQuiz.html
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\CultureQuiz.html
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\WebArticle.html
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\WebArticle_UserVersion.html
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe.config
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe.manifest
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.application
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.pdb
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form1.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form2.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form3.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.ListeningForm.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Properties.Resources.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.WebBrowserForm.resources
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\TestYourEnglish.csproj.GenerateResource.Cache
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.exe.manifest
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.application
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.exe
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.pdb
-C:\Users\DavidPC\Documents\Visual Studio 2013\Projects\EnglishProject\MainForm\obj\Debug\TestYourEnglish.csprojResolveAssemblyReference.cache
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\CultureQuiz.html
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\WebArticle.html
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\WebArticle_UserVersion.html
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe.manifest
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.application
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.exe
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\bin\Debug\MainForm.pdb
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\TestYourEnglish.csprojResolveAssemblyReference.cache
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form1.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form2.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Form3.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.ListeningForm.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.WebBrowserForm.resources
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\TestYourEnglish.csproj.GenerateResource.Cache
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.exe.manifest
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.application
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.exe
+C:\Users\DavidPC\documents\visual studio 2013\Projects\EnglishProject\MainForm\obj\Debug\MainForm.pdb
